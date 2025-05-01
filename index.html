@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Lala Assessment 4</title> 
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo@"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    
+    <div class="header">
+        <newh>Global Shark Attack Incidents</newh>
+        <br></br>
+        <text>From 2015-2020, there have been <span class="black-number">568</span> cases of shark attacks recorded all around the world.</text>
+    </div>
+   
+    <div id="map"></div>
+
+    <div id="circles-container"></div>
+
+    <div class="grid-container">
+        <div class="left-item"></div>
+        <div class="right-item">
+            <div class= "inner-left">
+                <newh><i>More than <span class="black-number">1/2</span> of the global fatal attacks were caused by <strong>Tiger sharks</strong>.</i></newh>
+            </div>
+            <div class= "inner-right">
+                <figure>
+                    <img src="shark.png" alt="shark">
+                    <figcaption> "Antique fish Tiger Shark" © Fe. Clarke (Licensed under CC BY 4.0）</figcaption>
+                </figure>
+                <br></br>
+                <newp>The second most fatal species is the White shark followed by the Bull shark. Whilst the Tiger shark is most commonly found 
+                    in United States, specifically in Hawaii, the white shark is generally encountered in California, South Africa and Western Australia.
+                     </newp>
+            </div>
+        </div>
+        <div class="bottom-left-item">
+            <div class= "inner-left">
+                <newh><i>Australia saw the most fatal attacks at <span class="black-number">14</span> victims from 2015 to 2020.</i></newh>
+            </div>
+            <div class="cloud">
+            </div>
+        </div>
+        <div class="bottom-right-item"></div>
+    </div>
+
+    <div class="footer">
+        <h4>Dataset provided by Brenda Griffith from <u>https://www.kaggle.com/datasets/thedevastator/global-shark-attack-incidents/data</u></h4>
+
+    <script src="data-script-sharkattack.js"></script>
+
+</body>
+</html>
